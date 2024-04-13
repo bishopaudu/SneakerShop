@@ -45,7 +45,13 @@ class _HomePageState extends State<HomePage> {
             Scaffold.of(context).openDrawer();
           },
         ),
-         ) 
+         ),
+         actions: const [
+           Padding(
+             padding: EdgeInsets.only(right:12.0),
+             child: Icon(Icons.supervised_user_circle),
+           )
+         ], 
       ),
       drawer: Drawer(
         backgroundColor:Colors.grey[900],
